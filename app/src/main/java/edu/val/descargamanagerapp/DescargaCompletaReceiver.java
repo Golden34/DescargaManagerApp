@@ -11,19 +11,14 @@ public class DescargaCompletaReceiver extends BroadcastReceiver {private long id
     private Context context;
 
 
-
-
     public DescargaCompletaReceiver(Context context) {
         this.context = context;
     }
 
 
-
     public void setId_descarga(long id_descarga) {
         this.id_descarga = id_descarga;
     }
-
-
 
     @Override
     public void onReceive(Context context, Intent intent) {

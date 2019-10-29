@@ -29,13 +29,10 @@ import java.lang.reflect.Method;
 public class DescargaActivity extends AppCompatActivity {
     private static final String URL_CANCION_COCIDITO = "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/a7/79/0b/mzm.qjnerkzx.aac.p.m4a";
 
-
     private ProgressDialog mProgressDialog;
     private Uri uri_descarga;
     private File f_destino;
     private String ruta_fichero_descarga;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,9 +47,6 @@ public class DescargaActivity extends AppCompatActivity {
         //SUPONEMOS QUE HA SIDO CONCEDIDO EL PERMISO DE ESCRITURA
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
-
-
-
 
     /**
      * Mostramos un cuadro de dialogo de forma opcional mientas se descargar
@@ -100,7 +94,6 @@ public class DescargaActivity extends AppCompatActivity {
 
     }
 
-
     private void descargarFichero (String url) {
 
         long id_descarga = 0;
@@ -127,8 +120,6 @@ public class DescargaActivity extends AppCompatActivity {
 
     }
 
-
-
     public void descargar (View v) {
         descargarFichero(URL_CANCION_COCIDITO);
     }
@@ -149,7 +140,6 @@ public class DescargaActivity extends AppCompatActivity {
             Log.e("Error" , "ERROR al reproducir", e);
         }
     }
-
 
     public void reproducirVisible (View v) {
 
